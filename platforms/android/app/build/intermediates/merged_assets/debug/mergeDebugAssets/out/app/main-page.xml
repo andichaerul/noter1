@@ -1,0 +1,37 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page" xmlns:ns="nativescript-carousel">
+    <Page.actionBar>
+        <ActionBar title="Booking Lap.Futsal" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <DatePicker loaded="onDatePickerLoaded" date="{{ date }}" minDate="{{ minDate }}" maxDate="{{ maxDate }}"></DatePicker>
+        <!-- </GridLayout> -->
+        <!-- <GridLayout margin="20,0,0,0" height="250">
+            <ns:Carousel debug="true" height="100%" width="100%" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" indicatorColor="#fff000" finite="true" bounce="false" showIndicator="true" verticalAlignment="top" android:indicatorAnimation="swap">
+                
+                <ns:CarouselItem id="slide1" backgroundColor="#b3cde0" verticalAlignment="middle">
+                    <Label text="Slide 1" backgroundColor="#50000000" horizontalAlignment="center"/>
+                </ns:CarouselItem>
+
+                <ns:CarouselItem id="slide2" backgroundColor="#6497b1" verticalAlignment="middle">
+                    <Label text="Slide 2" backgroundColor="#50000000" horizontalAlignment="center"/>
+                </ns:CarouselItem>
+
+                <ns:CarouselItem id="slide3" backgroundColor="#005b96" verticalAlignment="middle">
+                    <Label text="Slide 3" backgroundColor="#50000000" horizontalAlignment="center"/>
+                </ns:CarouselItem>
+
+                <ns:CarouselItem id="slide4" backgroundColor="#03396c" verticalAlignment="middle">
+                    <Label text="Slide 4" backgroundColor="#50000000" horizontalAlignment="center"/>
+                </ns:CarouselItem>
+
+            </ns:Carousel>
+        </GridLayout> -->
+    </StackLayout>
+</Page>

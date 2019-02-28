@@ -1,0 +1,21 @@
+{
+	"nativePlatformStatus": "3",
+	"appFilesHashes": {
+		"D:\\noter1\\app\\app.css": "364ed24c34f9f7fcc97e23a2ff3d05389cbc267f",
+		"D:\\noter1\\app\\app-root.xml": "900a386cb2d8abc9573413eb3aff45448dcd3608",
+		"D:\\noter1\\app\\item-page.js": "f0caab9909de6ae93e743060674e30f2f704acce",
+		"D:\\noter1\\app\\item-page.xml": "5b4c00878c46d13b2bc6081aeb7c4cb93b986381",
+		"D:\\noter1\\app\\app.js": "51fe37fb0847709d2ae685dc786d3118965e8da6",
+		"D:\\noter1\\app\\main-page.js": "bf66fb95bae1a7cb79d07d2e6acddc4aa8fb561b",
+		"D:\\noter1\\app\\main-page.xml": "203cdd36532181294288ad4ffb90c9edcf1b6bab",
+		"D:\\noter1\\app\\main-view-model.js": "1c8a287aa65ac2c7becf54fbbb075147397c64f8",
+		"D:\\noter1\\app\\package.json": "554a1e7b09cfa1663c75683765118999cb11411a",
+		"D:\\noter1\\app\\references.d.ts": "c83a3304d98c2586359871f5d8ac10c8aa8af848"
+	},
+	"release": false,
+	"bundle": false,
+	"changesRequireBuild": true,
+	"time": "Mon Feb 25 2019 23:26:10 GMT+0800 (Central Indonesia Time)",
+	"changesRequireBuildTime": "Mon Feb 25 2019 23:26:10 GMT+0800 (Central Indonesia Time)",
+	"projectFileHash": "1281589dc08df20152b1feabd99f1392ee39ac1220716ce9d04c079c4f27e304"
+}

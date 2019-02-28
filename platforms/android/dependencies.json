@@ -1,0 +1,22 @@
+[
+    {
+        "name": "nativescript-carousel",
+        "directory": "..\\..\\node_modules\\nativescript-carousel"
+    },
+    {
+        "name": "nativescript-modal-datetimepicker",
+        "directory": "..\\..\\node_modules\\nativescript-modal-datetimepicker"
+    },
+    {
+        "name": "nativescript-theme-core",
+        "directory": "..\\..\\node_modules\\nativescript-theme-core"
+    },
+    {
+        "name": "tns-core-modules",
+        "directory": "..\\..\\node_modules\\tns-core-modules"
+    },
+    {
+        "name": "tns-core-modules-widgets",
+        "directory": "..\\..\\node_modules\\tns-core-modules-widgets"
+    }
+]

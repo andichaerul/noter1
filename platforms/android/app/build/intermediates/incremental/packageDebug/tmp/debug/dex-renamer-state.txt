@@ -1,0 +1,4 @@
+#Mon Feb 18 11:03:51 SGT 2019
+base.0=D\:\\noter1\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,121 @@
+{
+  "_from": "nativescript-carousel",
+  "_id": "nativescript-carousel@4.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-qiu/cEHhzHruZDkEQIcYqVgdwDzLh4Js94gNzFB0UZ/m1XbM0beCpcg6LpWQC0Z79d5ZGvnx+U81HSNsB4/mYw==",
+  "_location": "/nativescript-carousel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-carousel",
+    "name": "nativescript-carousel",
+    "escapedName": "nativescript-carousel",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-carousel/-/nativescript-carousel-4.1.0.tgz",
+  "_shasum": "691387d96df68db228aa46480214966d15e6e754",
+  "_spec": "nativescript-carousel",
+  "_where": "D:\\noter1",
+  "author": {
+    "name": "Nedim Erkocevic",
+    "email": "nedim@fkzeljo.com",
+    "url": "https://github.com/manijak"
+  },
+  "bugs": {
+    "url": "https://github.com/manijak/nativescript-carousel/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    }
+  ],
+  "deprecated": false,
+  "description": "Carousel component for NativeScript (iOS & Android).",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0",
+    "semver": "^5.5.0",
+    "tns-core-modules": "~4.1.0",
+    "tns-platform-declarations": "~4.2.1",
+    "tslint": "^5.11.0",
+    "typescript": "~2.8.2"
+  },
+  "homepage": "https://github.com/manijak/nativescript-carousel",
+  "keywords": [
+    "NativeScript",
+    "Carousel",
+    "Slider",
+    "Pager",
+    "ViewPager",
+    "DKCarouselView",
+    "iOS",
+    "Android",
+    "manijak"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "index",
+  "name": "nativescript-carousel",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "core3": "false",
+      "pan": "true",
+      "wrapper": "false",
+      "category": "Interface"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manijak/nativescript-carousel.git"
+  },
+  "scripts": {
+    "build": "npm i && npm run tsc",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
+    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
+    "demo.ios": "npm run preparedemo && cd ../demo && tns run ios --syncAllFiles",
+    "demo.ios.device": "npm run preparedemo && cd ../demo && tns platform remove ios && tns run ios",
+    "demo.reset": "cd ../demo && rimraf platforms",
+    "development.setup": "npm run setup && npm link && cd ../demo && npm link nativescript-carousel && cd ../src",
+    "generate.typings.ios": "cd ../demo && TNS_DEBUG_METADATA_PATH=\"$(pwd)/metadata\" tns build ios && TNS_TYPESCRIPT_DECLARATIONS_PATH=\"$(pwd)/typings\" tns build ios && echo 'Now look for your library typings in demo/typings!'",
+    "link": "npm i && cd ../demo && npm i && cd ../src && npm run plugin.link",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-carousel && cd ../src",
+    "plugin.tscwatch": "npm run tsc -- -w",
+    "precommit": "lint-staged",
+    "preparedemo": "npm run build && cd ../demo && tns plugin remove nativescript-carousel && tns plugin add ../src && tns install",
+    "prepublishOnly": "npm run build",
+    "setup": "npm run build && cd ../demo && npm i",
+    "setupandinstall": "npm i && cd ../demo && npm i && cd ../src && npm run build && cd ../demo && tns plugin add ../src && cd ../src",
+    "test": "npm run tslint && npm run tslint.demo && cd ../demo && tns build ios && tns build android",
+    "test.android": "cd ../demo && tns platform remove android && tns test android --justlaunch",
+    "test.ios": "cd ../demo && tns platform remove ios && tns test ios --emulator",
+    "test.ios.device": "cd ../demo && tns platform remove ios && tns test ios",
+    "tsc": "tsc -skipLibCheck",
+    "tslint": "tslint --config '../tslint.json' '*.ts' --exclude '**/node_modules/**'",
+    "tslint.demo": "tslint --config '../tslint.json' '../demo/app/*.ts' --exclude '**/node_modules/**'"
+  },
+  "typings": "index.d.ts",
+  "version": "4.1.0"
+}

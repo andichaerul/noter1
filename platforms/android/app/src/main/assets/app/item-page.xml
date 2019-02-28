@@ -1,0 +1,10 @@
+<Page loaded="onPageLoaded">
+    <ActionBar title="Pilih tanggal">
+  		<NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onTap" sup="lala"/>
+	</ActionBar>
+
+    <StackLayout>
+        <DatePicker loaded="onDatePickerLoaded" date="{{ date }}" minDate="{{ minDate }}" maxDate="{{ maxDate }}"></DatePicker>
+        <TextField text="{{ textFieldVal }}" hint="Enter text..." />
+    </StackLayout>
+</Page>
